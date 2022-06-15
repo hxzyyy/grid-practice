@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+.card-container {
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  width: 600px;
+  height: 400px;
+
+  display: grid;
+
+  grid-template-columns: 35% 60%;
+  grid-template-rows: 20% 1fr 20%;
+
+  gap: 0px 10px;
+
+  grid-template-areas:
+    "image title"
+    "image description"
+    "image instagram";
+
+  padding: 2.4rem;
+
+  border-radius: 16px;
+  box-shadow: 1px 1px 43px .8px #000000;
+}
+
+.title {
+  color: #0fae98;
+
+  font-size: 2.4rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.image {
+  display: flex;
+
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+
+  grid-area: image;
+}
+
+.description {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.8rem;
+  grid-area: description;
+}
+
+.instagram {
+  color: #7e8584;
+  font-size: 1.6rem;
+
+  text-align: center;  
+  text-shadow: -2px -2px 2px rgba(126, 133, 132, 0.5);
+  
+  grid-area: instagram;
+}
